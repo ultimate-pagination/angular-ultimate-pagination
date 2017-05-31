@@ -2,6 +2,8 @@
   "name": "angular-ultimate-pagination",
   "version": "0.0.0",
   "description": "Angular pagination component based on ultimate-pagination",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,5 +15,11 @@
     "ultimate-pagination"
   ],
   "author": "Dmytro Yarmak <dmytroyarmak@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "ultimate-pagination": "^1.0.0"
+  }
 }
