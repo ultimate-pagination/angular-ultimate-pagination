@@ -1,0 +1,17 @@
+{
+  "name": "angular-ultimate-pagination",
+  "version": "0.0.0",
+  "description": "Angular pagination component based on ultimate-pagination",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular",
+    "component",
+    "pagination",
+    "paginator",
+    "ultimate-pagination"
+  ],
+  "author": "Dmytro Yarmak <dmytroyarmak@gmail.com>",
+  "license": "MIT"
+}
