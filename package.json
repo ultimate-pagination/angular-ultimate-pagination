@@ -2,8 +2,5 @@
   "name": "angular-ultimate-pagination",
   "private": true,
   "author": "Dmytro Yarmak <dmytroyarmak@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "lerna": "^2.0.0-rc.5"
-  }
+  "license": "MIT"
 }
