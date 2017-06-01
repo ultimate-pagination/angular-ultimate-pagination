@@ -5,8 +5,6 @@ import { HttpModule } from '@angular/http';
 import { UltimatePaginationModule } from 'angular-ultimate-pagination';
 import { AppComponent } from './app.component';
 
-console.log(UltimatePaginationModule);
-
 @NgModule({
   declarations: [
     AppComponent

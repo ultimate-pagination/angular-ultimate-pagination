@@ -1,0 +1,26 @@
+{
+  "name": "angular-ultimate-pagination",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ultimate-pagination/angular-ultimate-pagination"
+  },
+  "author": {
+    "name": "Dmytro Yarmak",
+    "email": "dmytroyarmak@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ultimate-pagination/angular-ultimate-pagination/issues"
+  },
+  "module": "angular-ultimate-pagination.js",
+  "typings": "angular-ultimate-pagination.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
