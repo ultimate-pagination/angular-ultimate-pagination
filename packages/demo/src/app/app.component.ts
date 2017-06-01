@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'up works!';
+  currentPage = 1;
+  totalPages = 10;
 }

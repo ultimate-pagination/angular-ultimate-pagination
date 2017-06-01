@@ -1,6 +1,5 @@
 {
   "name": "angular-ultimate-pagination-build",
-  "version": "0.0.0",
   "private": true,
   "scripts": {
     "build": "gulp build",
@@ -26,6 +25,9 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ultimate-pagination/angular-ultimate-pagination/issues"
+  },
+  "dependencies": {
+    "ultimate-pagination": "^1.0.0"
   },
   "devDependencies": {
     "@angular/common": "^4.0.0",

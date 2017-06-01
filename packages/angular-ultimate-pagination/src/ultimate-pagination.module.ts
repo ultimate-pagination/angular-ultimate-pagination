@@ -1,7 +1,7 @@
 import { NgModule, ModuleWithProviders, ANALYZE_FOR_ENTRY_COMPONENTS, InjectionToken } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UltimatePaginationComponent } from './ultimate-pagination.component';
-export * from './ultimate-pagination.component';
+import { UltimatePaginationItemDirective } from './ultimate-pagination-item.directive';
 
 export interface UltimatePaginationTheme {
     [itemType: string]: any;
@@ -14,7 +14,8 @@ export const ULTIMATE_PAGINATION_THEME = new InjectionToken<UltimatePaginationTh
         CommonModule
     ],
     declarations: [
-        UltimatePaginationComponent
+        UltimatePaginationComponent,
+        UltimatePaginationItemDirective
     ],
     exports: [
         UltimatePaginationComponent

@@ -18,6 +18,9 @@
   },
   "module": "angular-ultimate-pagination.js",
   "typings": "angular-ultimate-pagination.d.ts",
+  "dependencies": {
+    "ultimate-pagination": "^1.0.0"
+  },
   "peerDependencies": {
     "@angular/core": "^4.0.0",
     "rxjs": "^5.1.0",
