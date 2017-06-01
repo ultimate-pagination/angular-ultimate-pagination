@@ -19,7 +19,7 @@ export class UltimatePaginationItemDirective implements OnChanges {
 
     ngOnChanges(changes: SimpleChanges) {
         let itemChange = changes['item'];
-        if (itemChange.isFirstChange || itemChange.previousValue.type !== itemChange.currentValue.type) {
+        if (itemChange.isFirstChange() || itemChange.previousValue.type !== itemChange.currentValue.type) {
             this._viewContainerRef.clear();
             this._componentRef = null;
             const ItemComponent = this.getItemComponentFromTheme();
