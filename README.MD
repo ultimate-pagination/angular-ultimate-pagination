@@ -21,36 +21,61 @@ and then from your Angular `AppModule`:
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+// Import UltimatePaginationModule
+import { UltimatePaginationModule } from 'angular-ultimate-pagination';
 
 import { AppComponent } from './app.component';
 
-// Import your library
-import { SampleModule } from 'angular-ultimate-pagination';
+// Implement component's per each pagination item type
+import { PaginationItemPageComponent } from './pagination-item-page/pagination-item-page.component';
+import { PaginationItemEllipsisComponent } from './pagination-item-ellipsis/pagination-item-ellipsis.component';
+import { PaginationItemFirstPageComponent } from './pagination-item-first-page/pagination-item-first-page.component';
+import { PaginationItemPreviousPageComponent } from './pagination-item-previous-page/pagination-item-previous-page.component';
+import { PaginationItemNextPageComponent } from './pagination-item-next-page/pagination-item-next-page.component';
+import { PaginationItemLastPageComponent } from './pagination-item-last-page/pagination-item-last-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PaginationItemPageComponent,
+    PaginationItemEllipsisComponent,
+    PaginationItemFirstPageComponent,
+    PaginationItemPreviousPageComponent,
+    PaginationItemNextPageComponent,
+    PaginationItemLastPageComponent
   ],
   imports: [
     BrowserModule,
 
-    // Specify your library as an import
-    LibraryModule
+    // Add UltimatePaginationModule to AppModule's imports and provide theme by specifying components per item type
+    UltimatePaginationModule.withTheme({
+      PAGE: PaginationItemPageComponent,
+      ELLIPSIS: PaginationItemEllipsisComponent,
+      FIRST_PAGE_LINK: PaginationItemFirstPageComponent,
+      PREVIOUS_PAGE_LINK: PaginationItemPreviousPageComponent,
+      NEXT_PAGE_LINK: PaginationItemNextPageComponent,
+      LAST_PAGE_LINK: PaginationItemLastPageComponent
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
 ```
 
-Once your library is imported, you can use its components, directives and pipes in your Angular application:
+Once `UltimatePaginationModule` is imported you can use pagination component:
 
 ```xml
-<!-- You can now use your library component in app.component.html -->
-<h1>
-  {{title}}
-</h1>
-<sampleComponent></sampleComponent>
+<ultimate-pagination
+    [(currentPage)]="currentPage"
+    [totalPages]="totalPages"
+    [boundaryPagesRange]="boundaryPagesRange"
+    [siblingPagesRange]="siblingPagesRange"
+    [hidePreviousAndNextPageLinks]="hidePreviousAndNextPageLinks"
+    [hideFirstAndLastPageLinks]="hideFirstAndLastPageLinks"
+    [hideEllipsis]="hideEllipsis"
+></ultimate-pagination>
 ```
 
 ## Development
